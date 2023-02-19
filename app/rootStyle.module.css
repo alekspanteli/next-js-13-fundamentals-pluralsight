@@ -1,0 +1,15 @@
+.homeLink{
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuBarLink{
+    text-decoration: none;
+    color: red;
+}
+
+.header{
+    background-color: black;
+    padding: 4rem;
+    text-align: center
+}
