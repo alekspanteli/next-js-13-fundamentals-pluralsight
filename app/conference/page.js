@@ -6,6 +6,7 @@ export default function Home() {
         <h1>Welcome to conference</h1>
         <h2><Link href="/conference/speakers">speakers</Link></h2>
         <h2><Link href="/conference/sessions">sessions</Link></h2>
+        <h2><Link href="/">home</Link></h2>
       </main>
     )
   }
