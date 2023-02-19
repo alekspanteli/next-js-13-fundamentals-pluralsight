@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import OurStoryPic from "@/images/home-image-1.jpg";
+// import OurStoryPic from "./home-image-1.jpg";
 import styles from "./home.module.css"
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <h1>Welcome to home</h1>
       {/* <Image className={styles.img} src={OurStoryPic} alt="Test" quality="100" placeholder="blur" /> */}
-      <img src={OurStoryPic} />
+      <img src="home-image-1.jpg" alt="test" />
     </>
   );
 }
