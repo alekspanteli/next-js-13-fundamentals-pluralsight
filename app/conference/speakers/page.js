@@ -1,9 +1,12 @@
 import Link from "next/link";
 
 async function fetchSpeakers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const res = await fetch("https://jsonplaceholder.typicode.com/users",
+  { next: { revalidate: 20 } }
+  );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
+  
 
   // Recommendation: handle errors
   if (!res.ok) {
@@ -12,6 +15,7 @@ async function fetchSpeakers() {
   }
 
   return res.json();
+  
 }
 
 export default async function Home() {
